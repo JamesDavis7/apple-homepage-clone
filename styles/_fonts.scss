@@ -1,0 +1,23 @@
+@font-face {
+  font-family: SF Pro;
+  src: url(/fonts/SanFranciscoDisplay-Thin.ttf); // fallback font
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: SF Pro;
+  src: url(/fonts/SanFranciscoDisplay-Ultralight.ttf); // fallback font
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: SF Pro;
+  src: url(/fonts/SanFranciscoDisplay-Light.ttf); // fallback font
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: SF Pro;
+  src: url(/fonts/SanFranciscoDisplay-Regular.ttf); // primary font
+  font-weight: 400;
+}

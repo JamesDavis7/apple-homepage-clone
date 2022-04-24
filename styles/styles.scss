@@ -1,0 +1,264 @@
+// imports
+
+@import "navbarAndbanner";
+@import "productgrid";
+@import "footer";
+@import "fonts";
+// end of imports
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: SF Pro;
+}
+
+html {
+  font-size: 14px;
+}
+
+.website-wrapper {
+  // wraps round everything but the navbar an banner
+  margin-top: -70px; // allows the shop online banner to fit correctly
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+// global hero
+
+.hero {
+  height: 52rem;
+  background-position: center;
+  border-top: 0.4rem solid white;
+  border-bottom: 0.4rem solid white;
+}
+// end of global hero
+
+// ipad pro
+.ipad-pro {
+  margin-top: 5.1rem;
+  background-image: url("/images/ipadlarge.jpg");
+  background-repeat: no-repeat;
+  border-top: none;
+
+  .title-heading {
+    color: white !important;
+  }
+  .title-sub-heading {
+    color: white;
+  }
+  .title-price {
+    margin-top: 15px !important;
+  }
+  .title {
+    margin-top: -10px;
+  }
+  .cta {
+    margin-top: 18px;
+  }
+
+  .cta-link {
+    color: #2997ff !important;
+  }
+}
+// end of ipad pro
+
+// global section styles
+.title {
+  color: rgb(31, 31, 31);
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+.title-heading {
+  font-size: 4.2rem;
+  line-height: 1.07143;
+  letter-spacing: -0.003rem;
+}
+
+.title-sub-heading {
+  font-size: 1.85rem;
+  margin-top: 0.6rem;
+  letter-spacing: 0.008rem;
+  font-weight: 400;
+}
+
+.title-price {
+  font-size: 1.2rem;
+  margin-top: 0.68rem;
+  color: #888;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.cta-link {
+  color: #06c !important;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+
+  &:hover {
+    text-decoration: 2px underline;
+  }
+}
+
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+.iphone-12 {
+  background-image: url("/images/iphone12.jpg");
+  .cta {
+    font-size: 20px;
+  }
+}
+
+.imac {
+  background-image: url("/images/imac.jpg");
+  .cta {
+    color: #06c;
+  }
+}
+// end of global section styles
+
+// search container that is found within mobile navigation menu...
+.search-container {
+  display: none;
+  margin-top: -35px;
+}
+// end of search container that is found within mobile navigation menu...
+
+// medium screen queries
+@media screen and (max-width: 1085px) {
+  .imacdown-wrapper {
+    margin-top: -35px;
+  }
+  .ipad-pro {
+    background-image: url("/images/ipadmedium.jpg");
+    height: 48rem !important;
+  }
+  .hero {
+    height: 45rem;
+    border-top: none;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  .iphone-12 {
+    background-image: url("/images/iphone12medium.jpg");
+    margin-top: -25px;
+    .line-break {
+      display: block;
+    }
+  }
+
+  .cta {
+    .cta-link {
+      font-size: 17px;
+    }
+  }
+
+  .imac {
+    height: 45rem;
+    background-image: url("/images/imacmedium1.jpg");
+  }
+
+  .title-heading {
+    font-size: 45px;
+  }
+
+  .title-sub-heading {
+    font-size: 1.5rem;
+  }
+
+  .cta-link:nth-child(2) {
+    margin-left: 2rem;
+  }
+  // end of medium screen queries
+
+  // smaller screen queries
+  @media screen and (max-width: 765px) {
+    header {
+      transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1),
+        height 0.56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+    .container {
+      padding: 0;
+    }
+
+    .imacdown-wrapper {
+      margin-top: 5px;
+    }
+    .cta {
+      .cta-link {
+        font-size: 12px;
+      }
+    }
+
+    .title-price {
+      font-size: 15px;
+    }
+
+    .ipad-pro {
+      background-image: url("/images/ipadmedium.jpg");
+      height: 39rem !important;
+    }
+
+    .ipad-pro {
+      background-image: url("/images/ipadsmall.jpg");
+    }
+
+    .hero {
+      height: 39rem;
+      border-top: none;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+
+    .imac {
+      background-image: url("/images/imacsmall.jpg");
+      height: 39rem;
+      padding-top: 1px;
+      .cta {
+        margin-top: 10px;
+      }
+      .title {
+        margin-top: -20px;
+      }
+    }
+
+    .iphone-12 {
+      background-image: url("/images/iphone12small.jpg");
+      .line-break {
+        display: block;
+      }
+    }
+
+    .title-heading {
+      font-size: 35px;
+    }
+
+    .title-sub-heading {
+      font-size: 17px;
+    }
+    .cta {
+      .cta-link {
+        font-size: 17px;
+      }
+    }
+  }
+}
+// end of smaller screen queries
