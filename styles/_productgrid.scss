@@ -1,11 +1,11 @@
 .grid-wrapper {
-  padding: 0px 10px; // wraps entire grid
+  padding: 0px 10px;
 }
 
 .grid-container {
   border-top: 0.1rem solid white;
   display: grid;
-  grid-template-columns: 50% 50%; // 50% 50% makes content no longer increase col size
+  grid-template-columns: 50% 50%;
   grid-column-gap: 0.6rem;
   overflow: hidden;
   max-width: 100%;
@@ -17,30 +17,35 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
+
   .title-heading {
     margin-top: -20px;
     font-size: 40px;
     overflow: hidden;
   }
+
   .title-sub-heading {
     font-size: 21px;
   }
+
   .cta {
     margin-top: 10px;
   }
 }
-// end of global grid item css
+
 
 // individual grid items
-
 .grid-item-1 {
   background-image: url("/images/gridimages/iphone12prolarge1.jpg");
+
   .title-heading,
   .title-sub-heading {
     color: white;
   }
+
   .cta-link {
     color: #2997ff !important;
+
     .line-break {
       display: block;
     }
@@ -49,11 +54,13 @@
 
 .grid-item-2 {
   background-image: url("/images/gridimages/iwatchlarge1.jpg");
+
   .colorfulText {
     color: rgb(0, 0, 0); // fallback color if background image does not load
     background: url("/images/gridimages/iwatchtextcolor1.jpg") center right;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     .line-break {
       display: inline;
     }
@@ -62,6 +69,7 @@
 
 .grid-item-3 {
   background-image: url("/images/gridimages/arcadelarge1.jpg");
+
   .title-sub-heading {
     margin-top: 30px;
   }
@@ -69,14 +77,17 @@
 
 .grid-item-4 {
   background-image: url("/images/gridimages/tvlarge1.jpg");
+
   .title,
   .cta {
     margin-top: 30px;
   }
+
   .title-sub-heading {
     font-size: 40px;
     font-weight: 600;
   }
+
   .cta {
     margin-top: 8px;
   }
@@ -94,35 +105,37 @@
     margin-left: 10px;
     color: white;
   }
+
   .cta-link {
     color: #2997ff !important;
   }
 }
 
-// end of individual grid items
-
 // grid queries
 
 // medium screens
-
 @media screen and (max-width: 1085px) {
+
   // global grid-item
   .grid-item {
     margin-top: -30px;
+
     .title {
       margin-top: 30px;
+
       .title-heading {
         font-size: 40px !important;
         margin-top: -30px;
         font-size: 40px;
         overflow: hidden;
       }
+
       .title-sub-heading {
         font-size: 20px;
       }
     }
   }
-  // end of global grid-item
+
 
   .cta {
     .cta-link {
@@ -132,14 +145,17 @@
 
   .grid-item-1 {
     background-image: url("/images/gridimages/mediumimage1.jpg");
+
     .title {
       .title-heading {
         font-size: 35px;
       }
+
       .title-sub-heading {
         font-size: 20px;
       }
     }
+
     .line-break {
       display: block;
     }
@@ -147,11 +163,13 @@
 
   .grid-item-2 {
     background-image: url("/images/gridimages/mediumimage2.jpg");
+
     .title {
       .title-heading {
         font-size: 35px;
       }
     }
+
     .line-break {
       display: block;
     }
@@ -159,12 +177,15 @@
 
   .grid-item-3 {
     background-image: url("/images/gridimages/mediumimage3.jpg");
+
     .title {
       margin-top: 28px;
     }
+
     .title-heading {
       font-size: 35px;
     }
+
     .title-sub-heading {
       font-size: 20px;
     }
@@ -172,9 +193,11 @@
 
   .grid-item-4 {
     background-image: url("/images/gridimages/mediumimage4.jpg");
+
     .title {
       margin-top: 28px;
     }
+
     .title-sub-heading {
       font-size: 30px !important;
       margin-top: 25px;
@@ -183,6 +206,7 @@
 
   .grid-item-5 {
     background-image: url("/images/gridimages/mediumimage5.jpg");
+
     .title {
       .title-heading {
         font-size: 40px;
@@ -203,8 +227,6 @@
     margin-bottom: -20px;
   }
 }
-
-// end of medium screens
 
 // smaller screens
 
@@ -228,9 +250,11 @@
     .title {
       margin-top: 40px;
     }
+
     .cta {
       margin-top: 20px;
     }
+
     .line-break {
       display: inline;
     }
@@ -252,7 +276,3 @@
     grid-template-columns: auto;
   }
 }
-
-// end of smaller screens
-
-// end of grid queries

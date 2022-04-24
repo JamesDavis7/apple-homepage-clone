@@ -19,63 +19,72 @@ footer {
   border-color: rgba(255, 255, 255, 0.596);
 }
 
-// large footer display
+// large footer
 .footerLarge {
   width: 100%;
+
   th {
     text-align: start;
     color: rgb(75, 75, 75);
   }
+
   a {
     font-size: 12px;
     padding: 5px 0px;
     color: #515154;
     display: inline-block;
+
     &:hover {
       text-decoration: underline 1px solid black;
     }
   }
 }
-// end of large footer display
 
-// mobile footer display
-
+// mobile footer
 .mobileFooter {
   display: none;
 }
 
 // bottom details
-
 .bottomDetails {
   margin-top: 10px;
+
   p {
     padding: 8px 0px;
     display: inline-block;
     color: #86868b;
   }
+
   .seperator2 {
     border-color: rgba(255, 255, 255, 0.596);
   }
+
   .country {
     float: right;
     padding: 8px 0px;
+
     a {
       color: #272727 !important;
+
       &:hover {
         text-decoration: underline 1px solid black;
       }
     }
   }
+
   .tabs {
     float: right;
     display: flex;
     margin-right: 60px;
     padding: 8px 0px;
+
     li {
       list-style: none;
+
       a {
         padding: 0px 5px;
         color: #272727;
+
         &:hover {
           text-decoration: underline 1px solid black;
         }
@@ -83,6 +92,7 @@ footer {
     }
   }
 }
+
 .cta-small-links {
   color: rgb(72, 139, 207) !important;
   text-decoration: none;
@@ -97,18 +107,22 @@ footer {
 .bottomDetails-med {
   display: none;
   @extend .bottomDetails;
+
   .tabs {
     float: none !important;
     flex-wrap: wrap;
     margin-top: -8px !important;
   }
+
   .country {
     margin: 0;
     display: block;
   }
+
   p {
     margin-top: -5px;
   }
+
   .cta-small-links {
     color: rgb(72, 139, 207) !important;
     text-decoration: none;
@@ -122,7 +136,6 @@ footer {
 }
 
 // bottom details media queries
-
 @media screen and (max-width: 934px) {
   .tabs {
     float: none !important;
@@ -135,20 +148,25 @@ footer {
     display: none;
     padding-top: 8px;
   }
+
   .bottomDetails-med {
     display: block;
+
     .tabs {
       float: none;
       margin-left: -4px;
       padding-top: 15px;
     }
+
     p {
       display: inline;
       padding: 0;
     }
+
     a:hover {
       text-decoration: underline 1px solid black;
     }
+
     .country {
       float: none;
       padding: 20px 0px;
@@ -156,21 +174,16 @@ footer {
   }
 }
 
-// end of bottom details media queries
-
-// end of bottom details
-
 // footer media queries
-
-// footer media queries
-
 @media screen and (max-width: 760px) {
   .footerLarge {
     display: none;
   }
+
   .mobileFooter {
     display: block;
   }
+
   .dropper {
     color: rgb(34, 34, 34);
     cursor: pointer;
@@ -213,10 +226,12 @@ footer {
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     border-bottom: 1px solid rgb(186, 186, 186);
+
     ul {
       list-style: none;
       margin-bottom: 20px;
     }
+
     a {
       color: #797979;
 
@@ -229,9 +244,5 @@ footer {
       display: block !important;
       margin-bottom: 8px;
     }
-
-    // end of footer media queries
-    // end of mobile footer display
-    // end of footer
   }
 }
